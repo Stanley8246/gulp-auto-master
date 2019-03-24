@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*  樣式變數定義  */
+/*===== variables =====*/
+/*  mixins定義 */
+/*  全站統一性定義  */
+body {
+  background-color: #e0e0e0; }
+
+.logo.icon-logo {
+  display: inline-block;
+  width: 74px;
+  height: 74px;
+  background-size: 84px;
+  background-repeat: no-repeat;
+  text-indent: -9999px; }
+
+.social-list {
+  list-style: none; }
+  .social-list .social-item {
+    display: inline-block; }
+
+.payment-zone {
+  text-align: right;
+  padding: 2rem 0;
+  line-height: 3rem; }
+  .payment-zone .payment-list {
+    list-style: none; }
+    .payment-zone .payment-list .payment-item {
+      margin: 15px 5px;
+      display: inline-block; }
+
+.card {
+  border: none;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.15); }
+  .card .card-block a {
+    color: #1c2c3c; }
+  .card .card-block .news-list .single-news .single-news-title {
+    padding: 12px 0 0; }
+  .card .card-block .news-list .single-news:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0; }
+  .card .card-title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 4px;
+    background-color: #f00; }
+  .card.card-business:before, .card.card-youth:before, .card.card-culture:before, .card.card-life:before, .card.card-entertainment:before, .card.card-gadget:before, .card.card-education:before, .card.card-design:before {
+    content: '';
+    padding: 4px 0;
+    background-color: #0454a4;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    z-index: 999; }
+  .card.card-youth:before {
+    background-color: #fbd304; }
+  .card.card-culture:before {
+    background-color: #dc1454; }
+  .card.card-life:before {
+    background-color: #14b35c; }
+  .card.card-entertainment:before {
+    background-color: #067aef; }
+  .card.card-gadget:before {
+    background-color: #04b494; }
+  .card.card-education:before {
+    background-color: #1c2c3c; }
+  .card.card-design:before {
+    background-color: #54443c; }
+
+/*
+.user {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}*/

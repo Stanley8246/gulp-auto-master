@@ -1,0 +1,110 @@
+//@import "font-awesome/fontawesome";
+//
+//@import "font-awesome/brands.scss";
+//@import "font-awesome/solid.scss";
+
+/*  樣式變數定義  */
+
+@import "var";
+
+/*  mixins定義 */
+
+@import "mixin";
+
+/*  全站統一性定義  */
+
+
+@import "global";
+
+.logo.icon-logo{
+  display: inline-block;
+  width: 74px;
+  height: 74px;
+  background-size: 84px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.social-list{
+  list-style: none;
+  .social-item{
+    display: inline-block;
+  }
+}
+
+.payment-zone{
+  text-align: right;
+  padding: 2rem 0;
+  line-height: 3rem;
+  .payment-list{
+    list-style: none;
+    .payment-item{
+      margin: 15px 5px;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+.card {
+  border: none;
+
+  @include box-shadow();
+  .card-block{
+    a{
+      color: $card-block-default-color;
+    }
+    .news-list{
+      .single-news{
+        .single-news-title{
+          padding: $single-news-title-padding;
+        }
+        &:not(:last-child) {
+          margin-bottom: 10px;
+          border-bottom: 1px solid #e0e0e0;
+        }
+      }
+    }
+  }
+  .card-title{
+    &:before{
+      content:'';
+      display:block;
+      position:absolute;
+      left:0;
+      height:20px;
+      width:4px;
+      background-color:#f00;
+    }
+  }
+  &.card-business{
+    &:before {
+      content: '';
+      padding: $card-padding;
+      background-color: #0454a4;
+      border-top-left-radius: $card-radius;
+      border-top-right-radius: $card-radius;
+      z-index: $card-z-index;
+    }
+  }
+
+  @each $name in $list{
+    &.card-#{$name}{
+      &:before {
+        @extend .card-business;
+        background-color: map-get($card-bgcolors, $name);
+      }
+    }
+  }
+}
+
+/*
+.user {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}*/

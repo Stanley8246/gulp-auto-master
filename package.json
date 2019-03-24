@@ -1,0 +1,17 @@
+{
+  "name": "gulp-sass",
+  "version": "1.0.0",
+  "description": "Gulp Sass Sample",
+  "main": "index.js",
+  "repository": "https://github.com/colorwalf/gulp-sass.git",
+  "author": "Jeff Liu <jeff@cct95.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.0",
+  "gulp-clean-css": "^4.0.0",
+    "gulp-connect": "^5.7.0",
+  "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+  "gulp.spritesmith": "^6.9.0"
+  }
+}
