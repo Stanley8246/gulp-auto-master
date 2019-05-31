@@ -1,0 +1,140 @@
+hr{
+	width: 80%;
+	border-width: 5px;
+	background-color: #888888;
+	border-color:#888888 
+	border-style: solid;
+}
+.top{
+	width: 75%;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+	background-color: #888888;
+	border-radius: 15px;
+}
+.logo{
+	float: left;
+}
+.option{
+	widows: 150px;
+	height: 50px;
+	padding-top: 30px;
+	margin-left: 25px;
+	display: inline-block;
+	font-size: 30px;
+	cursor: pointer;
+	color: white;
+}
+.option:hover{
+	background-color: #AAAAAA;
+	border-radius: 15px;
+}
+.content{
+	width:100%;
+	display: inline-block;
+	margin-top: 80px;
+	text-align: center;
+}
+.content_2{
+	width:100%;
+	display: inline-block;
+	margin-top: 100px;
+}
+.content_3{
+	width:100%;
+	display: inline-block;
+	margin-top: 100px;
+
+}
+
+.aboutme{
+	display: inline-block;
+	width: 75%;
+	height: 450px;
+	background-color:white;
+	border-color: #AAAAAA;
+	border-width:8px;
+	border-radius: 15px;
+	border-style: solid;
+	text-align: center;
+}
+.pic{
+	display: inline-block;
+	margin-top: 8%;
+
+}
+.pic_2{
+	display: inline-block;
+	margin-top: 4%;
+	margin-left: 30px;
+
+}
+.pic:hover
+{
+  transform: scale(1.3);
+  transition:all 0.7s;
+}
+.pic_2:hover
+{
+  transform: scale(1.3);
+  transition:all 0.7s;
+}
+.introduction{
+	display: inline-block;
+	width: 600px;
+	height: 100px;
+	vertical-align: top;
+	margin-left: 20px;
+}
+.tt{
+	display: inline-block;
+	margin-top: 6%;
+	text-align: center;
+	font-size:40px;
+}
+.detail{
+	display: inline-block;
+	margin-top: 3%;
+	width: 100%;
+	font-size:20px;
+	letter-spacing:3px;
+	line-height:60px;
+}
+.exprience{
+	display: inline-block;
+	width: 35%;
+	height: 400px;
+	margin-left: 180px;
+	background-color:white;
+	border-color: #AAAAAA;
+	border-width:8px;
+	border-radius: 15px;
+	border-style: solid;
+	text-align: center;
+}
+.contact{
+	display: inline-block;
+	width: 35%;
+	height: 400px;
+	margin-left: 50px;
+	background-color:white;
+	border-color: #AAAAAA;
+	border-width:8px;
+	border-radius: 15px;
+	border-style: solid;
+	text-align: center;
+}
+.record{
+	display: inline-block;
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+.txt{
+	color: black;
+  	font-size: 30px;
+ 	position: absolute;
+	background-color:#AAAAAA;
+
+}
